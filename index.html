@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FasTech - Engineering Services</title>
+
+    <!--? ============ FAVICON ============ ?-->
+
+    <link rel="shortcut icon" href="./images/a-01.png" type="svg+xml" />
+
+    <!--? ============ CUSTOM CSS ============ ?-->
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--? ============ GOOGLE FONT ============ ?-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--? ============ PRELOAD IMAGES ============ ?-->
+    <link rel="preload" as="image" href="./images/hero-banner.png" />
+  </head>
+  <body id="top">
+    <!--? ============ HEADER ============ ?-->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="height: 100px; width: 100px; border: 2px solid red" ,>
+          <img src="./images/insta-post-6.jpg" alt="" />
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Alpha97</a>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link" data-nav-link>Products</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#project" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="btn btn-primary has-before has-after">Contact Us</a>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--? ============ HERO ============ ?-->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">FasTech Engineering Services</h1>
+
+              <p class="hero-text">
+                At FasTech, We provide IT and electrical engineering
+                services and equipment, known for delivering innovative,
+                high-quality and sustainable solutions to our clients, and to be
+                recognized as a trusted and reliable partner in the industry.
+              </p>
+
+              <div class="wrapper">
+                <a href="#" class="btn btn-primary has-before has-after"
+                  >How It Works</a
+                >
+                <!-- <button class="hero-btn" aria-label="alpha97 promo">
+                  <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">Behind the scenes</span> -->
+                <!-- </button> -->
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link" style="--color: #5955e9">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link" style="--color: #ff0000">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <span class="span">YouTube</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link" style="--color: #1ca0f2">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <span class="span">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./images/1032.jpg"
+                width="50%"
+                height="100px"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!--? ============ SERVICE ============ ?-->
+
+        <!-- <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Our Services</p>
+
+            <h2 class="h2 section-title text-center">
+              Managing you business with our
+              <span class="has-before">best service</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-1.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Product Management</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-2.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web & Mobile Development</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-3.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Fast Customer Support</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-4.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Human Resources</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 210, 100%, 53%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-5.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Design and Vreatives</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 157, 89%, 44%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-6.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Marketing and Communication</a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 52, 98%, 50%">
+                  <div class="card-icon">
+                    <img
+                      src="./images/service-icon-7.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Business Development</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <a href="#" class="link-card" style="--color: 203, 97%, 75%">
+                  <span class="span">04 More Service</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+        <!--? ============ PROJECT ============ ?-->
+
+        <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Our Services</p>
+
+            <h2 class="h2 section-title text-center">
+              Managing you business with our
+              <span class="has-before">best service</span>
+            </h2>
+            
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-2.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Network"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Network Design & Implementation</a>
+                    </h3>
+                    <a href="#" class="card-tag">IT Service</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-2.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Cloud Solutions "
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Cloud Computing Solutions</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">IT Service</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-3.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Data Solutions"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Data center Solutions</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">IT Service</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-4.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Ecp"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">ECP Projects</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Electrical Services</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-5.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="camera"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Camera Installation</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Electrical Service</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="./images/project-5.jpg"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="solar"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Solar Installation</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Electrical Service</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--? ============ BANNER ============ ?-->
+
+        <section class="section banner-section">
+          <div class="banner-container"></div>
+        </section>
+
+        <!--? ============ PRODUCTS ============ ?-->
+
+        <section class="product section" id="product" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Our Products</p>
+
+            <h2 class="h2 section-title text-center">
+              Providing you trusted quality
+              <span class="has-before">Products</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="product-image-container">
+                  <img
+                    class="project-image"
+                    src="./images/c1.jpg"
+                    alt="cctv Camera"
+                  />
+                  <div class="product-info">
+                    <!-- icon -->
+                    <h2>CCTV Cameras</h2>
+                    <p>Eyes everywhere, security everywhere</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <article class="product-item" onClick="">
+                  <div class="product-image-container">
+                    <img
+                      class="project-image"
+                      src="./images/sp1.jpg"
+                      alt="cctv Camera"
+                    />
+                    <div class="product-info">
+                      <!-- icon -->
+                      <h2>Solar Panels</h2>
+                      <p>
+                        Harnessing the power of the sun, for a sustainable
+                        future
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li>
+                <article class="product-item" onClick="">
+                  <div class="product-image-container">
+                    <img
+                      class="project-image"
+                      src="./images/inv1.jpg"
+                      alt="cctv Camera"
+                    />
+                    <div class="product-info">
+                      <!-- icon -->
+                      <h2>Invertor</h2>
+                      <p>Unlocking the power of energy efficiency.</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li>
+                <article class="product-item" onClick="">
+                  <div class="product-image-container">
+                    <img
+                      class="project-image"
+                      src="./images/br1.jpg"
+                      alt="cctv Camera"
+                    />
+                    <div class="product-info">
+                      <!-- icon -->
+                      <h2>Breakers</h2>
+                      <p>Ensure electrical safety, save life save property.</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--? ============ NEWSLETTER ============ ?-->
+
+        <section
+          class="section newsletter has-bg-image"
+          aria-label="newsletter"
+          style="background-image: url(./images/newsletter-bg.jpg)"
+        >
+          <div class="container">
+            <figure class="newsletter-banner">
+              <img
+                src="./images/newsletter-banner.png"
+                width="355"
+                height="356"
+                loading="lazy"
+                alt="newsletter banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="newsletter-content">
+              <p class="section-subtitle has-before">Get every update</p>
+
+              <h2 class="h2 section-title">
+                Subscribe newslater get latest updates and deals
+              </h2>
+
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter your mail"
+                  required
+                  class="email-field"
+                />
+
+                <button
+                  type="submit"
+                  class="btn btn-secondary has-before has-after"
+                >
+                  <span class="span">Subscribe</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!--? ============ BLOG ============ ?-->
+
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <p class="section-subtitle text-center has-before">Blog Post</p>
+
+            <h2 class="h2 section-title text-center">
+              Popular <span class="has-before">blog post</span>
+            </h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card large">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/blog-1.jpg"
+                      width="644"
+                      height="363"
+                      loading="lazy"
+                      alt="Godaddy user flow solution..."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                        <span class="span">July 22, 2022</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Godaddy user flow solution...</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      At Alpha97 we specialize in designing, building, shipping
+                      and scaling beautiful. At Alpha97 we specialize in
+                      designing, building, shipping and scaling beautiful.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/blog-2.jpg"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="Godaddy user flow solution for every individual"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Godaddy user flow solution for every individual</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/blog-3.png"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="Business solution for every individual"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Business solution for every individual</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/blog-4.png"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="How to gain pro experience at figma update version"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >How to gain pro experience at figma update version</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--? ============ FOOTER ============ ?-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">About Alpha97</p>
+
+            <p class="footer-text">
+              A new way to make the payments easy, reliable and 100% secure.
+              claritatem itamconse quat. Exerci tationulla
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Create</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Explore</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Partners</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Suggestions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Newsletters</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img
+                        src="./images/insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="#" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2023 Alpha97. All Rights Reserved by Muhammad Usama
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Login / Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--? ============ BACK TO TOP ============ ?-->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--? ============ CUSTOM JS ============ ?-->
+
+    <script src="./js/script.js" defer></script>
+
+    <!--? ============ IONICON LINK ============ ?-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
