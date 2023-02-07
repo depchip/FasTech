@@ -1,7 +1,28 @@
-'use strict';
+"use strict";
 
+// ? changing background images
 
+const body = document.getElementById("home");
+const imageSources = [
+  "../images/br1.jpg",
+  "../images/c1.jpg",
+  "../images/ecp.jpg",
+  "../images/cctv.png",
+  "../images/data.jpg",
+];
 
+let index = 0;
+
+setInterval(function () {
+  body.style.backgroundImage = `url(${imageSources[index]})`;
+  index++;
+
+  if (index === imageSources.length) {
+    index = 0;
+  }
+}, 3000);
+
+//
 
 // ? Add Event on Elements ? //
 
@@ -13,7 +34,8 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
+};
+
 
 
 
@@ -27,18 +49,16 @@ const overlay = document.querySelector("[data-overlay]");
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+};
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
 const closeNavbar = function () {
   navbar.classList.remove("active");
   overlay.classList.remove("active");
-}
+};
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
-
-
 
 // ? Header & back top btn show when scroll down to 100px ? //
 
@@ -53,6 +73,6 @@ const headerActive = function () {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", headerActive);
