@@ -4,11 +4,11 @@
 
 const body = document.getElementById("home");
 const imageSources = [
-  "../images/br1.jpg",
-  "../images/c1.jpg",
-  "../images/ecp.jpg",
-  "../images/cctv.png",
-  "../images/data.jpg",
+  // "../images/br1.jpg",
+  // "../images/c1.jpg",
+  // "../images/ecp.jpg",
+  // "../images/cctv.png",
+  // "../images/data.jpg",
 ];
 
 let index = 0;

@@ -78,7 +78,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 li {
@@ -800,24 +800,81 @@ body {
 .feature-card:is(:hover, :focus) .card-icon ion-icon {
   color: var(--white);
 }
+
 /* ?============== CONTACT US ==============?*/
-.contact-us
-{
-  background-color: var(--ghost-white);
+.contact-us {
   height: 100vh;
+  background-color: var(--ghost-white);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
-.contact-us .container
-{
+.contact-us .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin: auto;
+  width: 85%;
+  padding-left: 20px;
+  padding-top: 70px;
+}
+.contact-us .contact-item {
+  color: black;
+  font-size: var(--fs-8);
+  font-weight: 500;
 }
 
+.contact-us li {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
 
+.contact-list .fa-phone:before,
+.contact-list .fa-envelope:before,
+.contact-list .fa-link:before,
+.contact-list .fa-map-marker:before {
+  color: #5a58e9;
+  margin-right: 18px;
+}
+.contact-list .fa-phone:before {
+  font-size: 25px;
+}
+.contact-list .fa-envelope:before {
+  font-size: 20px;
+}
+.contact-list .fa-link:before {
+  font-size: 23px;
+}
+.contact-list .fa-map-marker:before {
+  font-size: 27px;
+  margin-left: 2px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.form-row > .col,
+.form-row > [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 10px;
+}
+
+.contact-us form .form-group .form-control {
+  font-family: "Rubik", sans-serif;
+  background: white;
+  border: 1px solid #f4f5f9;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.contact-us form .form-group input {
+  height: 62px;
+}
 
 /* ?============== FOOTER ==============?*/
 
@@ -837,6 +894,15 @@ body {
   height: 80px;
 }
 
+.footer-list div {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-list .footer-contact-block {
+  margin-top: 13px;
+}
+
 .footer-list-title {
   color: var(--white);
   font-size: var(--fs-5);
@@ -845,7 +911,7 @@ body {
 }
 
 .footer-text {
-  margin-block-end: 10px;
+  margin: 10px 0px;
 }
 
 .footer .social-list {
@@ -874,32 +940,40 @@ body {
   color: var(--mustard);
 }
 
-.insta-post {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+.footer-link-col-3 {
+  margin: 0px;
 }
 
-.insta-card {
-  position: relative;
-  border-radius: var(--radius-10);
-  overflow: hidden;
+.fa-link:before {
+  content: "\f3c5";
+  font-size: 18px;
+  margin: 3px 12px 0px 0px;
+  color: white;
 }
 
-.insta-card .card-content {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  background-color: var(--blue-ryb_80);
-  color: var(--white);
-  font-size: 25px;
-  opacity: 0;
-  transition: var(--transition-1);
+.fa-envelope:before {
+  content: "\f0e0";
+  font-size: 15px;
+  margin: 3px 12px 0px 0px;
+  color: white;
 }
 
-.insta-card:is(:hover, :focus-within) .card-content {
-  opacity: 1;
+.fa-phone:before {
+  content: "\f879";
+  font-size: 20px;
+  margin: 3px 12px 0px 0px;
+  color: white;
+}
+.fa-map-marker:before {
+  content: "\f041";
+  font-size: 22px;
+  margin: 3px 12px 0px 0px;
+  color: white;
+}
+
+.fa-linkdin::before {
+  content: "\f08c";
+  font-size: 22px;
 }
 
 .footer-bottom {
@@ -1094,7 +1168,8 @@ body {
   }
 
   .btn {
-    height: 70px;
+    height: 58px;
+    margin: 4px 0px;
   }
 
   .grid-list {
@@ -1219,20 +1294,8 @@ body {
   /* ?====== FOOTER ======?*/
 
   .footer-top {
-    grid-template-columns: 1.3fr 0.5fr 1fr 0.9fr;
+    grid-template-columns: 1.3fr 0.5fr 1.2fr 0.9fr;
     padding-block: 90px;
-  }
-
-  .fa-map-marker-alt:before {
-    content: "\f3c5";
-  }
-
-  .fa-envelope:before {
-    content: "\f0e0";
-  }
-
-  .fa-phone-alt:before {
-    content: "\f879";
   }
 
   .footer-bottom {
@@ -1244,9 +1307,12 @@ body {
   .footer-form {
     display: flex;
     flex-direction: row;
+    margin-block-start: 20px;
   }
   .footer-form button[type="submit"] {
     color: white;
+    position: relative;
+    left: -27px;
   }
 
   .copyright {

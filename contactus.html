@@ -22,9 +22,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!--? ============ PRELOAD IMAGES ============ ?-->
     <link rel="preload" as="image" href="./images/hero-banner.png" />
+
+    <!--? ============ FONT-AWESOME ============ ?-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body id="top">
     <!--? ============ HEADER ============ ?-->
@@ -49,19 +59,27 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              <a href="index.html#home" class="navbar-link" data-nav-link
+                >Home</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+              <a href="index.html#service" class="navbar-link" data-nav-link
+                >Services</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#product" class="navbar-link" data-nav-link>Products</a>
+              <a href="index.html#product" class="navbar-link" data-nav-link
+                >Products</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#aboutus" class="navbar-link" data-nav-link>About Us</a>
+              <a href="index.html#aboutus" class="navbar-link" data-nav-link
+                >About Us</a
+              >
             </li>
           </ul>
         </nav>
@@ -71,9 +89,9 @@
         </button>
 
         <div class="wrapper">
-          <a href="contactus.html" class="btn btn-primary has-before has-after"
-            >Contact Us</a
-          >
+          <a href="index.html" class="btn btn-primary has-before has-after">
+            <ion-icon name="arrow-back"></ion-icon>
+          </a>
         </div>
 
         <div class="overlay" data-nav-toggler data-overlay></div>
@@ -81,16 +99,89 @@
     </header>
     <!-- CONTACT US -->
     <main>
-      <div class="contact-us">
-        <div class="contact-container">
-          <div class="contact-left">
-            <h1>WE ARE ALWAYS HERE TO HELP YOU</h1>
-          </div>
-          <div class="contact-right">
-            
+      <section>
+        <div class="contact-us">
+          <div class="contact-container">
+            <div class="contact-left">
+              <h1 class="h1 hero-title">Connect with Us</h1>
+              <p class="hero-text">
+                At FasTech, we value your feedback and are always here to
+                listen. Contact us for a quick response to your questions or
+                concerns.
+              </p>
+              <ul class="contact-list">
+                <li>
+                  <div class="fa fa-phone contact-us-icon"></div>
+                  <p class="contact-item">(+92) 3024789754, (+92) 3022912788</p>
+                </li>
+                <li>
+                  <div class="fa fa-envelope" style="padding-top: 2px"></div>
+                  <p class="contact-item">info@fastech.live</p>
+                </li>
+                <li>
+                  <div class="fa fa-link"></div>
+                  <p class="contact-item">www.fastech.live</p>
+                </li>
+                <li>
+                  <div class="fa fa-map-marker"></div>
+                  <p class="contact-item">
+                    382-K Johar Town, Lahore, Pakistan.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-right">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <textarea
+                      class="form-control"
+                      rows="8"
+                      cols="56"
+                      placeholder="Write Message"
+                    ></textarea>
+                    <div class="wrapper">
+                      <a
+                        href="contactus.html"
+                        class="btn btn-primary has-before has-after"
+                        >Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!--? ============ FOOTER ============ ?-->
@@ -121,7 +212,7 @@
 
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-linkdin"></ion-icon>
+                  <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
               </li>
             </ul>
@@ -133,44 +224,49 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Home</a>
+              <a href="#home" class="footer-link">Home</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Services</a>
+              <a href="#service" class="footer-link">Services</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Products</a>
+              <a href="#product" class="footer-link">Products</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">About us</a>
+              <a href="#aboutus" class="footer-link">About us</a>
             </li>
           </ul>
 
-          <ul class="footer-list">
-            <li>
+          <div class="footer-list">
+            <div>
               <p class="footer-list-title">Contact</p>
-            </li>
-            <li>
-              <!-- <i class="fa-solid fa-location-dot"></i> -->
-              <p class="footer-link">(+92) 3024789754, (+92) 3022912788</p>
-            </li>
-            <li>
-              <!-- <i class="fal fa-envelope" aria-hidden="true"></i> -->
-              <p class="footer-link">info@fastech.live</p>
-            </li>
-            <li>
-              <p class="footer-link">www.fastech.live</p>
-            </li>
-            <li>
-              <!-- <i class="fal fa-map-marker-alt" aria-hidden="true"></i> -->
-              <p class="footer-link">382-K Johar Town, Lahore, Pakistan.</p>
-            </li>
-          </ul>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-phone"></div>
+              <p class="footer-link footer-link-col-3">
+                (+92) 3024789754, (+92) 3022912788
+              </p>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-envelope"></div>
+              <p class="footer-link footer-link-col-3">info@fastech.live</p>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-link"></div>
+              <p class="footer-link footer-link-col-3">www.fastech.live</p>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-map-marker"></div>
+              <p class="footer-link footer-link-col-3">
+                382-K Johar Town, Lahore, Pakistan.
+              </p>
+            </div>
+          </div>
 
-          <div class="feedback footer-link">
+          <div class="feedback">
             <p class="footer-list-title">Feedback</p>
             <form class="footer-form">
               <input
@@ -180,9 +276,9 @@
                 class="feedback-form"
                 placeholder="Email Address"
               />
-              <button type="submit">send</button>
+              <button type="submit"><ion-icon name="send"></ion-icon></button>
             </form>
-            <p class="footer-link">
+            <p class="footer-text">
               Sign up for our latest news & articles. We won’t give you spam
               mails.
             </p>
@@ -196,6 +292,7 @@
         </div>
       </div>
     </footer>
+
 
     <!--? ============ BACK TO TOP ============ ?-->
 
