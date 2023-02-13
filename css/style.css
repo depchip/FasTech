@@ -78,7 +78,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 li {
@@ -371,6 +370,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+  width: 98%;
 }
 
 .logo {
@@ -805,20 +806,10 @@ body {
 
 /* ?============== CONTACT US ==============?*/
 .contact-us {
-  height: 100vh;
   background-color: var(--ghost-white);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.contact-us .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: auto;
-  width: 85%;
-  padding-left: 20px;
-  padding-top: 70px;
 }
 .contact-us .contact-item {
   color: black;
@@ -858,6 +849,7 @@ body {
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
+  justify-content: center;
 }
 .form-row > .col,
 .form-row > [class*="col-"] {
@@ -1039,6 +1031,9 @@ body {
     margin-inline: auto;
   }
 
+  .wrapper {
+    display: none;
+  }
   /* ?====== HEADER ======?*/
 
   .header .container {
@@ -1047,6 +1042,12 @@ body {
 
   /* ?====== PROJECT ======?*/
 
+  .project .grid-list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
   .project-card .card-content {
     max-width: max-content;
     width: calc(100% - 40px);
@@ -1054,6 +1055,10 @@ body {
     right: auto;
     padding: 50px 80px;
     transform: translate(-50%, calc(-50% + 20px));
+  }
+  .project-card {
+    width: 400px;
+    height: 413px;
   }
 
   .project-card:is(:hover, :focus-within) .card-content {
@@ -1064,30 +1069,35 @@ body {
     margin-block-end: 10px;
   }
 
+  .contact-us .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 130px;
+  }
+
   .footer-top {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    align-items: center;
     justify-content: center;
   }
-  /* 
-  .footer-brand .social-link,  .footer-brand .footer-list-title
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .feedback input[type="email"] {
+    color: var(--white);
+    border-radius: 6px;
+    height: 4rem;
+    padding: 1px 8px;
+    background-color: #000000;
   }
- 
-  ul[class="footer-list"].
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
-  .copyright
-  {
+
+  .footer-form button {
+    position: relative;
+    left: 475px;
+    top: -28px;
+    color: white;
+  }
+  .copyright {
     text-align: center;
   }
 }
@@ -1097,6 +1107,9 @@ body {
 @media (min-width: 768px) {
   /* ?====== CUSTOM PROPERTY ======?*/
 
+  .wrapper {
+    display: contents;
+  }
   :root {
     /* ?====== TYPOGRAPHY ======?*/
 
@@ -1168,14 +1181,6 @@ body {
     justify-content: space-around;
   }
 
-  /* .feature-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 30px;
-  } */
-
   /* ?====== PROJECT ======?*/
 
   .project .grid-list > li:first-child {
@@ -1187,6 +1192,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     row-gap: 60px;
+  }
+  .footer-form button {
+    left: 300px;
   }
 
   .copyright {
@@ -1205,6 +1213,10 @@ body {
 
   .container {
     max-width: 960px;
+  }
+
+  .container .wrapper {
+    display: contents;
   }
 
   .btn {
@@ -1296,12 +1308,12 @@ body {
   /* ?====== HERO ======?*/
 
   .hero {
-    background-image: url("../images/solar.jpg");
+    /* background-image: url("../images/solar.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: 0.5s ease-in;
-    overflow: hidden;
+    overflow: hidden; */
   }
   .hero .wrapper {
     flex-wrap: nowrap;
@@ -1357,20 +1369,13 @@ body {
   .footer-form button[type="submit"] {
     color: white;
     position: relative;
+    top: 0px;
     left: -27px;
   }
 
   .copyright {
     margin-block-end: 0;
     margin: auto;
-  }
-
-  .feedback input[type="email"] {
-    color: var(--white);
-    border-radius: 6px;
-    height: 4rem;
-    padding: 1px 8px;
-    background-color: #000000;
   }
 }
 
@@ -1447,5 +1452,12 @@ body {
 
   .filter-btn {
     padding-inline: 40px;
+  }
+
+  .contact-us .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 200px;
   }
 }
