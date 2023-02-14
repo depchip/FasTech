@@ -8,7 +8,7 @@
 
     <!--? ============ FAVICON ============ ?-->
 
-    <link rel="shortcut icon" href="./images/a-01.png" type="svg+xml" />
+    <link rel="shortcut icon" href="./images/fasteck_logo.png" type="svg+xml" />
 
     <!--? ============ CUSTOM CSS ============ ?-->
 
@@ -42,8 +42,11 @@
     <header class="header" data-header>
       <div class="container">
         <div class="header-logo-container">
-          <img src="./images/a-01.png" alt="logo" style="height: 69px" />
-          <h3>FasTech</h3>
+          <img
+            src="./images/fasteck_logo.png"
+            alt="logo"
+            style="height: 69px"
+          />
         </div>
         <nav class="navbar" data-navbar>
           <div class="wrapper">
@@ -57,29 +60,24 @@
             </button>
           </div>
 
-          <ul class="navbar-list">
+          <ul class="navbar-list" style="padding-right: 120px;">
             <li class="navbar-item">
-              <a href="index.html#home" class="navbar-link" data-nav-link
-                >Home</a
-              >
+              <a href="index.html#home" class="navbar-link" data-nav-link>Home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="index.html#service" class="navbar-link" data-nav-link
-                >Services</a
-              >
+              <a href="index.html#service" class="navbar-link" data-nav-link>Services</a>
             </li>
 
             <li class="navbar-item">
-              <a href="index.html#product" class="navbar-link" data-nav-link
-                >Products</a
-              >
+              <a href="index.html#product" class="navbar-link" data-nav-link>Products</a>
             </li>
 
             <li class="navbar-item">
-              <a href="index.html#aboutus" class="navbar-link" data-nav-link
-                >About Us</a
-              >
+              <a href="index.html#aboutus" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+            <li class="wrapper navbar-item">
+              <a href="index.htmlcontactus.html" class="navbar-link">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -89,9 +87,9 @@
         </button>
 
         <div class="wrapper">
-          <a href="index.html" class="btn btn-primary has-before has-after">
-            <ion-icon name="arrow-back"></ion-icon>
-          </a>
+          <a href="index.html" class="btn btn-primary has-before has-after"
+            >  < </a
+          >
         </div>
 
         <div class="overlay" data-nav-toggler data-overlay></div>
@@ -116,7 +114,7 @@
               <ul class="contact-list">
                 <li>
                   <div class="fa fa-phone contact-us-icon"></div>
-                  <p class="contact-item">(+92) 3024789754, (+92) 3022912788</p>
+                  <p class="contact-item">0303-3339962</p>
                 </li>
                 <li>
                   <div class="fa fa-envelope" style="padding-top: 2px"></div>
@@ -191,31 +189,41 @@
         <div class="footer-top section">
           <div class="footer-brand">
             <div>
-              <p class="footer-list-title">
-                <img src="./images/a-01.png" alt="logo" srcset="" /> FasTech
-              </p>
+              <img src="./images/fasteck_logo.png" alt="logo" srcset="" />
             </div>
-            <p class="footer-text">Advancing Technology, Powering Progress</p>
+            <div>
+              <p class="footer-text">Advancing Technology, Powering Progress</p>
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089567720930"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/fastech_engineering/"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
 
-            <ul class="social-list">
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-            </ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/fastech-engineering-services/"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <ul class="footer-list">
@@ -224,19 +232,19 @@
             </li>
 
             <li>
-              <a href="index.html#home" class="footer-link">Home</a>
+              <a href="#home" class="footer-link">Home</a>
             </li>
 
             <li>
-              <a href="index.html#service" class="footer-link">Services</a>
+              <a href="#service" class="footer-link">Services</a>
             </li>
 
             <li>
-              <a href="index.html#product" class="footer-link">Products</a>
+              <a href="#product" class="footer-link">Products</a>
             </li>
 
             <li>
-              <a href="index.html#aboutus" class="footer-link">About us</a>
+              <a href="#aboutus" class="footer-link">About us</a>
             </li>
           </ul>
 
@@ -245,17 +253,15 @@
               <p class="footer-list-title">Contact</p>
             </div>
             <div class="footer-contact-block">
-              <div class="fa fa-phone"></div>
-              <p class="footer-link footer-link-col-3">
-                (+92) 3024789754, (+92) 3022912788
-              </p>
+              <div class="fa fa-phone" style="color: blue"></div>
+              <p class="footer-link footer-link-col-3">0303-3339962</p>
             </div>
             <div class="footer-contact-block">
               <div class="fa fa-envelope"></div>
               <p class="footer-link footer-link-col-3">info@fastech.live</p>
             </div>
             <div class="footer-contact-block">
-              <div class="fa fa-map-marker"></div>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
               <p class="footer-link footer-link-col-3">
                 382-K Johar Town, Lahore, Pakistan.
               </p>
@@ -283,15 +289,18 @@
 
         <div class="footer-bottom">
           <p class="copyright">
-            Copyright &copy; 2023 FasTech. All rights reserved. Powered By
-            <a
-              style="color: #ffdd61; display: inline; font-weight: 600"
-              href="https://depchip.com/"
-              target="”_blank"
-              >DepChip
-            </a>
+            Copyright &copy; 2023 FasTech. All rights reserved.
           </p>
         </div>
+        <p class="power-by">
+          Powered By
+          <a
+            style="color: #ffdd61; display: inline; font-weight: 600"
+            href="https://depchip.com/"
+            target="”_blank"
+            >DepChip
+          </a>
+        </p>
       </div>
     </footer>
 
