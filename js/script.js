@@ -1,28 +1,19 @@
 "use strict";
 
-// ? changing background images
+let slideIndex = 0;
+showSlides();
 
-const body = document.getElementById("home");
-const imageSources = [
-  // "../images/br1.jpg",
-  // "../images/c1.jpg",
-  // "../images/ecp.jpg",
-  // "../images/cctv.png",
-  // "../images/data.jpg",
-];
-
-let index = 0;
-
-setInterval(function () {
-  body.style.backgroundImage = `url(${imageSources[index]})`;
-  index++;
-
-  if (index === imageSources.length) {
-    index = 0;
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-}, 3000);
-
-//
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 // ? Add Event on Elements ? //
 
