@@ -1306,7 +1306,7 @@ body {
   .navbar-list {
     display: flex;
     gap: 30px;
-    padding-left: 120px;
+    padding-left: 100px;
   }
 
   .navbar-link {
