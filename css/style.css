@@ -79,7 +79,7 @@
   padding: 0px;
   box-sizing: border-box;
 
-  /* border:2px solid red;0 */
+  /* border:2px solid red; */
 }
 
 li {
@@ -368,13 +368,13 @@ body {
   box-shadow: var(--shadow-1);
 }
 
-.header .container {
+/* .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   width: 98%;
-}
+} */
 
 .logo {
   color: var(--raisin-black-1);
@@ -563,7 +563,7 @@ body {
     opacity: 0.1;
   }
   100% {
-   opacity: 0.5;
+    opacity: 0.5;
   }
 }
 
@@ -1053,6 +1053,44 @@ body {
   background-image: var(--gradient);
 }
 
+
+/**============== RESPONSIVE FOR LARGER THAN 325PX SCREEN ==============**/
+
+@media (min-width: 320px) {
+  .header .container {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    align-items: center;
+    margin: auto;
+    width: 98%;
+  }
+
+  .header-logo-container img[alt="logo"] {
+    height: 60px;
+    width: 65px;
+  }
+  .active,
+  .dot:hover {
+    background-color: #000000;
+  }
+  .footer-form button {
+    position: relative;
+    left: 280px;
+    top: -23px;
+    color: white;
+  }
+
+  .footer-list-title {
+    margin-top: 25px;
+  }
+  .footer-bottom {
+    padding-block: 0px;
+  }
+  .power-by {
+    text-align: center;
+  }
+}
+
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
 
 @media (min-width: 525px) {
@@ -1070,9 +1108,21 @@ body {
   /* ?====== HEADER ======?*/
 
   .header .container {
-    max-width: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 98%;
   }
 
+  .header .container {
+    max-width: 100%;
+  }
+
+  .header-logo-container img[alt="logo"] {
+    height: 78px;
+    width: 90px;
+  }
   /* ?====== PROJECT ======?*/
 
   .project .grid-list {
@@ -1137,6 +1187,9 @@ body {
     margin: -40px 15rem;
     padding: 2px;
   }
+  .footer-bottom {
+    padding-block: 20px;
+  }
 }
 
 /**============== RESPONSIVE FOR LARGER THAN 768PX SCREEN ==============**/
@@ -1144,11 +1197,13 @@ body {
 @media (min-width: 768px) {
   /* ?====== CUSTOM PROPERTY ======?*/
 
+  .header .container {
+    max-width: unset;
+  }
   .wrapper {
     display: contents;
   }
-  .mySlides img
-  {
+  .mySlides img {
     height: 120vh;
   }
   :root {
