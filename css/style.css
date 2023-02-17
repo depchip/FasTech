@@ -1364,6 +1364,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
 
 @media (min-width: 525px) {
