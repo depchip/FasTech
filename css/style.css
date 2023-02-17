@@ -79,7 +79,7 @@
   padding: 0px;
   box-sizing: border-box;
 
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 li {
@@ -1090,10 +1090,12 @@ body {
 .contact-us .contact-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  margin: 16rem auto;
+  justify-content: center;
+  /* margin: 16rem auto; */
+  margin: auto;
   width: 85%;
   gap: 25px;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .contact-us {
@@ -1101,6 +1103,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 125vh;
 }
 .contact-us .contact-item {
   color: black;
@@ -1314,6 +1318,10 @@ body {
 /**============== RESPONSIVE FOR LARGER THAN 325PX SCREEN ==============**/
 
 @media (min-width: 320px) {
+  .contact-us {
+    height: 200vh;
+  }
+
   .header .container {
     display: grid;
     grid-template-columns: 1fr 0.1fr;
@@ -1356,14 +1364,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
-}
-
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
 
 @media (min-width: 525px) {
-  .contact-us form .form-group .form-control {
-    /* width: 190px; */
-  }
+  
 
   /* ?====== REUSED STYLE ======?*/
 
@@ -1471,8 +1475,7 @@ body {
   .header .container {
     max-width: unset;
   }
-  .hero-title
-  {
+  .hero-title {
     font-size: var(--fs-2);
   }
   .hero-text {
@@ -1684,9 +1687,13 @@ body {
     color: var(--white);
   }
 
+  .contact-us .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
   /* ?====== HERO ======?*/
 
-  
   .hero-text {
     font-size: var(--fs-7);
     margin-block: 33px 35px;
@@ -1763,6 +1770,13 @@ body {
   .row > [class*="col-"] {
     width: 88%;
   }
+
+  .contact-us {
+    height: 150vh;
+  }
+  .contact-container {
+    width: 85%;
+  }
 }
 
 /**============== RESPONSIVE FOR LARGER THAN 1200PX SCREEN ==============**/
@@ -1838,9 +1852,5 @@ body {
 
   .filter-btn {
     padding-inline: 40px;
-  }
-  .contact-us .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
   }
 }
