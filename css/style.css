@@ -79,7 +79,7 @@
   padding: 0px;
   box-sizing: border-box;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 li {
@@ -1424,12 +1424,6 @@ body {
     margin-block-end: 10px;
   }
 
-  /* .contact-us .contact-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 130px;
-  } */
 
   .footer-top {
     display: flex;
