@@ -1165,6 +1165,66 @@ body {
   height: 62px;
 }
 
+/* CAREERS */
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.job {
+  height: 165px;
+  padding: 9px;
+  background-color: white;
+  transition: var(--transition-2);
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.job:hover {
+  transform: scale(1.01);
+}
+.job-button {
+  height: 39px !important;
+  margin: 14px auto !important;
+}
+
+/* CAMERA */
+
+.service-list li {
+  font-weight: 600;
+  margin: 10px auto;
+}
+.fa-check:before {
+  color: #5a58e9;
+  font-size: 25px;
+  margin-right: 18px;
+}
+
+.camera-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.camera-row-image img {
+  width: 500px;
+  height: 100%;
+}
+.camera-row h2 {
+  margin-bottom: 20px;
+}
+.camera-row h4 {
+  color: var(--majorelle-blue);
+  font-size: var(--fs-4);
+  margin-bottom: 10px;
+}
+.camera-row p {
+  text-align: justify;
+}
+.camera-row-image {
+  border-right: 15px solid var(--majorelle-blue);
+}
+
 /* ?============== FOOTER ==============?*/
 
 .footer {
@@ -1364,12 +1424,42 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .jobs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .job {
+    height: 200px;
+  }
+  #job {
+    width: 80%;
+  }
+  .view-openings {
+    width: 80% !important;
+  }
+
+  .camera-row-image img {
+    width: 260px;
+    height: 100%;
+  }
+  .camera-row {
+    grid-template-columns: 1fr;
+  }
+  .service-list li {
+    /* font-weight: 600; */
+    margin: 10px auto;
+    font-size: 13px;
+    text-align: justify;
+  }
+  .wrapper a {
+    width: 100% !important;
+  }
 }
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
 
 @media (min-width: 525px) {
-  
-
   /* ?====== REUSED STYLE ======?*/
 
   .container {
@@ -1424,7 +1514,6 @@ body {
     margin-block-end: 10px;
   }
 
-
   .footer-top {
     display: flex;
     flex-direction: column;
@@ -1459,6 +1548,18 @@ body {
   }
   .footer-bottom {
     padding-block: 20px;
+  }
+
+  .view-openings {
+    width: 30% !important;
+  }
+  .camera-row-image img {
+    width: 380px;
+    height: 100%;
+    margin: auto;
+  }
+  .camera-row {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1580,6 +1681,14 @@ body {
   .power-by {
     margin: -38px 24.5rem;
   }
+  .camera-row-image img {
+    width: 310px;
+    height: 100%;
+    margin: auto;
+  }
+  .camera-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /**============== RESPONSIVE FOR LARGER THAN 992PX SCREEN ==============**/
@@ -1638,7 +1747,7 @@ body {
   .navbar-list {
     display: flex;
     gap: 30px;
-    padding-left: 100px;
+    padding-left: 85px;
   }
 
   .navbar-link {
@@ -1771,6 +1880,23 @@ body {
   }
   .contact-container {
     width: 85%;
+  }
+  /* JOBS */
+  .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .job {
+    height: 165px;
+  }
+  .camera-row-image img {
+    width: 400px;
+    height: 90%;
+    margin: auto;
+  }
+  .camera-row {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
