@@ -1191,16 +1191,6 @@ body {
 
 /* CAMERA */
 
-.service-list li {
-  font-weight: 600;
-  margin: 10px auto;
-}
-.fa-check:before {
-  color: #5a58e9;
-  font-size: 25px;
-  margin-right: 18px;
-}
-
 .camera-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1405,8 +1395,8 @@ body {
   }
   .footer-form button {
     position: relative;
-    left: 280px;
-    top: -23px;
+    left: 265px;
+    top: -27px;
     color: white;
   }
 
@@ -1443,6 +1433,7 @@ body {
   .camera-row-image img {
     width: 260px;
     height: 100%;
+    margin: auto;
   }
   .camera-row {
     grid-template-columns: 1fr;
@@ -1453,8 +1444,22 @@ body {
     font-size: 13px;
     text-align: justify;
   }
+
+  .fa-check:before {
+    color: #5a58e9;
+    font-size: 13px;
+    margin-right: 5px;
+  }
   .wrapper a {
     width: 100% !important;
+  }
+
+  .feedback input[type="email"] {
+    color: var(--white);
+    border-radius: 6px;
+    height: 4rem;
+    padding: 1px 8px;
+    background-color: #000000;
   }
 }
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
@@ -1519,14 +1524,6 @@ body {
     flex-direction: column;
     gap: 35px;
     justify-content: center;
-  }
-
-  .feedback input[type="email"] {
-    color: var(--white);
-    border-radius: 6px;
-    height: 4rem;
-    padding: 1px 8px;
-    background-color: #000000;
   }
 
   .footer-form button {
@@ -1688,6 +1685,17 @@ body {
   }
   .camera-row {
     grid-template-columns: 1fr;
+  }
+
+  .service-list li {
+    font-weight: 600;
+    margin: 10px auto;
+    font-size: 15px;
+  }
+  .fa-check:before {
+    color: #5a58e9;
+    font-size: 25px;
+    margin-right: 18px;
   }
 }
 
