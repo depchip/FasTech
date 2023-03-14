@@ -1087,82 +1087,66 @@ body {
 
 /* ?============== CONTACT US ==============?*/
 
-.contact-us .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  justify-content: center;
-  /* margin: 16rem auto; */
-  margin: auto;
-  width: 85%;
-  gap: 25px;
-  /* padding: 50px; */
+#contactus {
+  padding-top: 120px;
 }
 
-.contact-us {
-  background-color: var(--ghost-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 125vh;
-}
-.contact-us .contact-item {
-  color: black;
-  font-size: var(--fs-8);
-  font-weight: 500;
-}
-
-.contact-us li {
-  display: flex;
-  flex-direction: row;
-  margin-top: 25px;
-}
-
-.contact-list .fa-phone:before,
-.contact-list .fa-envelope:before,
-.contact-list .fa-link:before,
-.contact-list .fa-map-marker:before {
-  color: #5a58e9;
+/* .fa-phone:before,
+.fa-envelope:before,
+.fa-link:before,
+.fa-map-marker:before {
+  
   margin-right: 18px;
 }
-.contact-list .fa-phone:before {
-  font-size: 25px;
+.fa-phone:before {
+  color: #5a58e9 !important;
+
 }
-.contact-list .fa-envelope:before {
+.fa-envelope:before {
   font-size: 20px;
 }
-.contact-list .fa-link:before {
+.fa-link:before {
   font-size: 23px;
 }
-.contact-list .fa-map-marker:before {
+.fa-map-marker:before {
   font-size: 27px;
   margin-left: 2px;
+} */
+
+#contactus .fa-phone:before {
+  color: #5a58e9 !important;
+  font-size: 24px !important;
+}
+#contactus .fa-map-marker:before {
+  color: #5a58e9 !important;
+  font-size: 27px !important;
+}
+#contactus .fa-envelope:before {
+  color: #5a58e9 !important;
+  font-size: 20px !important;
 }
 
-.form-row {
+.row {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -5px;
-  margin-left: -5px;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+  gap: 12px;
 }
-.form-row > .col,
-.form-row > [class*="col-"] {
-  padding-right: 5px;
-  padding-left: 5px;
-  margin: 10px;
+.row-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
 }
 
-.contact-us form .form-group .form-control {
-  font-family: "Rubik", sans-serif;
-  background: white;
-  border: 1px solid #f4f5f9;
-  font-size: 15px;
-  padding: 20px;
-  border-radius: 8px;
-}
-.contact-us form .form-group input {
-  height: 62px;
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center; 
 }
 
 /* CAREERS */
