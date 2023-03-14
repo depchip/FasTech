@@ -1,5 +1,4 @@
 /* ?============== CUSTOM PROPERTY ==============?*/
-
 :root {
   /* ?======== COLORS ========?*/
 
@@ -91,6 +90,7 @@ img,
 span,
 input,
 button,
+textarea
 ion-icon {
   display: block;
 }
@@ -105,7 +105,8 @@ img {
 }
 
 input,
-button {
+button
+textarea {
   background: none;
   border: none;
   font: inherit;
@@ -1091,28 +1092,6 @@ body {
   padding-top: 120px;
 }
 
-/* .fa-phone:before,
-.fa-envelope:before,
-.fa-link:before,
-.fa-map-marker:before {
-  
-  margin-right: 18px;
-}
-.fa-phone:before {
-  color: #5a58e9 !important;
-
-}
-.fa-envelope:before {
-  font-size: 20px;
-}
-.fa-link:before {
-  font-size: 23px;
-}
-.fa-map-marker:before {
-  font-size: 27px;
-  margin-left: 2px;
-} */
-
 #contactus .fa-phone:before {
   color: #5a58e9 !important;
   font-size: 24px !important;
@@ -1142,11 +1121,23 @@ body {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
   align-content: center;
   justify-content: space-around;
-  align-items: center; 
+}
+
+.Form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#myForm input ,textarea {
+  border-radius: 8px;
+  background-color: #f4f5f9;
+  padding: 14px 14px;
+  margin: 8px 1px;
+  font-weight: 300;
 }
 
 /* CAREERS */
@@ -1869,9 +1860,6 @@ body {
 
   .contact-us {
     height: 150vh;
-  }
-  .contact-container {
-    width: 85%;
   }
   /* JOBS */
   .jobs {
