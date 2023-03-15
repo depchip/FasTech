@@ -90,8 +90,7 @@ img,
 span,
 input,
 button,
-textarea
-ion-icon {
+textarea ion-icon {
   display: block;
 }
 
@@ -105,8 +104,7 @@ img {
 }
 
 input,
-button
-textarea {
+button textarea {
   background: none;
   border: none;
   font: inherit;
@@ -387,7 +385,7 @@ body {
   background-color: var(--white);
   color: var(--eerie-black);
   font-size: 35px;
-  padding: 10px;
+  padding: 6px 11px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-10);
 }
@@ -774,7 +772,7 @@ body {
 .hero .social-link {
   background-color: var(--white);
   color: var(--color);
-  padding: 12px;
+  padding: 9px 14px;
   box-shadow: var(--shadow-1);
   border-radius: var(--radius-8);
   transition: var(--transition-2);
@@ -1056,7 +1054,7 @@ body {
   background-color: hsla(var(--color), 0.15);
   font-size: 24px;
   max-width: max-content;
-  padding: 18px;
+  padding: 11px 19px;
   border-radius: 50%;
   margin-block-end: 20px;
   transition: var(--transition-2);
@@ -1089,7 +1087,7 @@ body {
 /* ?============== CONTACT US ==============?*/
 
 #contactus {
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 #contactus .fa-phone:before {
@@ -1132,12 +1130,14 @@ body {
   flex-direction: row;
   gap: 10px;
 }
-#myForm input ,textarea {
+#myForm input,
+textarea {
   border-radius: 8px;
   background-color: #f4f5f9;
   padding: 14px 14px;
   margin: 8px 1px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: var(--ff-montserrat);
 }
 
 /* CAREERS */
@@ -1228,7 +1228,7 @@ body {
 
 .footer .social-link {
   background-color: var(--onyx);
-  padding: 12px;
+  padding: 7px 13px;
   border-radius: 50%;
   transition: var(--transition-1);
 }
@@ -1373,6 +1373,9 @@ body {
     left: 265px;
     top: -27px;
     color: white;
+
+    background-color: black;
+    border: black;
   }
 
   .footer-list-title {
@@ -1435,6 +1438,13 @@ body {
     height: 4rem;
     padding: 1px 8px;
     background-color: #000000;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+  .Form-row {
+    flex-direction: column;
   }
 }
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
@@ -1532,6 +1542,11 @@ body {
   }
   .camera-row {
     grid-template-columns: 1fr;
+  }
+
+  .footer-form button {
+    background-color: black;
+    border: black;
   }
 }
 
@@ -1671,6 +1686,10 @@ body {
     color: #5a58e9;
     font-size: 25px;
     margin-right: 18px;
+  }
+  .contact-container {
+    margin: auto;
+    width: 73%;
   }
 }
 
@@ -1878,6 +1897,18 @@ body {
   .camera-row {
     grid-template-columns: 1fr 1fr;
   }
+
+  .contact-container {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .Form-row {
+    flex-direction: row;
+  }
+  .contact-container {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 /**============== RESPONSIVE FOR LARGER THAN 1200PX SCREEN ==============**/
@@ -1953,5 +1984,13 @@ body {
 
   .filter-btn {
     padding-inline: 40px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .Form-row {
+    flex-direction: row;
   }
 }
