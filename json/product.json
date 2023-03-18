@@ -1,21 +1,21 @@
 [
     {
-      "productName": "CCTV Cameras",
+      "productName": "CCTV Camera",
       "productDesc": "Eyes everywhere, security everywhere",
       "productImage": "../images/camera_product.jpg"
     },
     {
-      "productName": "Solar Panels",
+      "productName": "Solar Panel",
       "productDesc": "Harnessing the power of the sun, for a sustainable future",
       "productImage": "../images/solar_product.jpg"
     },
     {
-      "productName": "Invertor",
+      "productName": "Inverter",
       "productDesc": "Unlocking the power of energy efficiency",
       "productImage": "../images/inverter_product.png"
     },
     {
-      "productName": "Breakers",
+      "productName": "Breaker",
       "productDesc": "Ensure electrical safety, save life save property",
       "productImage": "../images/breaker_product.jpg"
     }
