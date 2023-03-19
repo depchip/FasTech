@@ -19,20 +19,20 @@
     "serviceDetails": "data.html"
   },
   {
-    "serviceName": "ECP Projects",
+    "serviceName": "EPC Projects",
     "serviceType": "Electrical Services",
     "serviceImage": "../images/ecp_service.jpg",
     "serviceDetails": "ecp.html"
   },
 
   {
-    "serviceName": "Camera Installation",
+    "serviceName": "CCTV Camera Installation",
     "serviceType": "Electrical Services",
     "serviceImage": "../images/camera_service.png",
     "serviceDetails": "camera.html"
   },
   {
-    "serviceName": "Solar Installation",
+    "serviceName": "Solar System Installation",
     "serviceType": "Electrical Services",
     "serviceImage": "../images/solar_service.jpg",
     "serviceDetails": "solar.html"
