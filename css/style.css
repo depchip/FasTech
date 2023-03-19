@@ -1,4 +1,6 @@
 /* ?============== CUSTOM PROPERTY ==============?*/
+
+
 :root {
   /* ?======== COLORS ========?*/
 
@@ -1119,7 +1121,7 @@ body {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 50px;
   align-content: center;
   justify-content: space-around;
@@ -1138,8 +1140,20 @@ textarea {
   margin: 8px 1px;
   font-weight: 400;
   font-family: var(--ff-montserrat);
+  border: 0;
 }
 
+.right
+{
+  margin: auto;
+  width: 100%;
+}
+
+.form-text-area
+{
+  width: 100%;
+  height: 170px;
+}
 /* CAREERS */
 
 .jobs {
@@ -1388,10 +1402,6 @@ textarea {
     text-align: center;
   }
 
-  .contact-us .contact-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .jobs {
     display: grid;
     grid-template-columns: 1fr;
@@ -1441,16 +1451,44 @@ textarea {
   }
   .contact-container {
     grid-template-columns: 1fr;
-    width: 50%;
+    margin: auto;
+    gap:10px;
   }
   .Form-row {
     flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .Form-Text-area
+  {
+    margin: auto;
+    width: 70%;
+  }
+  .left
+  {
+    margin: auto;
+    /* width: 65%; */
+  }
+  .row-text{
+    font-size: 13px;
   }
 }
 /**============== RESPONSIVE FOR LARGER THAN 575PX SCREEN ==============**/
 
 @media (min-width: 525px) {
   /* ?====== REUSED STYLE ======?*/
+
+  .row-text{
+    font-size: 16px;
+  }
+  .Form-row
+  {   
+  width: 100%;
+  }
+  .left{
+    /* margin: auto; */
+    width: 80%;
+  }
 
   .container {
     max-width: 540px;
@@ -1548,12 +1586,18 @@ textarea {
     background-color: black;
     border: black;
   }
+  
 }
 
 /**============== RESPONSIVE FOR LARGER THAN 768PX SCREEN ==============**/
 
 @media (min-width: 768px) {
   /* ?====== CUSTOM PROPERTY ======?*/
+
+  .left{
+    margin: auto;
+    width: 100%;
+  }
 
   .header .container {
     max-width: unset;
@@ -1689,7 +1733,7 @@ textarea {
   }
   .contact-container {
     margin: auto;
-    width: 73%;
+    /* width: 73%; */
   }
 }
 
@@ -1795,7 +1839,7 @@ textarea {
 
   .contact-us .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.1fr 1fr
   }
 
   /* ?====== HERO ======?*/
@@ -1899,7 +1943,7 @@ textarea {
   }
 
   .contact-container {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
   }
 
   .Form-row {
@@ -1987,7 +2031,7 @@ textarea {
   }
 
   .contact-container {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
   }
 
   .Form-row {
