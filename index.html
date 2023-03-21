@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FasTech Engineering Services</title>
+
+    <!--? ============ FAVICON ============ ?-->
+
+    <link rel="shortcut icon" href="./images/fasteck_logo.png" type="svg+xml" />
+
+    <!--? ============ CUSTOM CSS ============ ?-->
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--? ============ GOOGLE FONT ============ ?-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--? ============= STYLE SHEETS =============== ?-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--? ============ PRELOAD IMAGES ============ ?-->
+
+    <link rel="preload" as="image" href="./images/hero-banner.png" />
+
+    <!--? ============ FONT-AWESOME ============ ?-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.0com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--? ============ SCRIPT ============ ?-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="top">
+    <!--? ============ HEADER ============ ?-->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="header-logo-container">
+          <img src="./images/fasteck_footer_logo.png" alt="logo" />
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">FasTech</a>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#product" class="navbar-link" data-nav-link>Products</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="careers.html" class="navbar-link" data-nav-link
+                >Careers</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="aboutus.html" class="navbar-link" data-nav-link
+                >About Us</a
+              >
+            </li>
+            <li class="wrapper navbar-item">
+              <a href="contactus.html" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="wrapper">
+          <a href="contactus.html" class="btn btn-primary has-before has-after"
+            >Contact Us</a
+          >
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <!--? ============ MAIN CONTENT ============ ?-->
+    <main>
+      <!--? ============ HERO ============ ?-->
+
+      <section class="hero" id="home" aria-label="hero">
+        <div id="cover" class="cover carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#cover" data-slide-to="0" class="active"></li>
+            <li data-target="#cover" data-slide-to="1"></li>
+            <li data-target="#cover" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="dark-overlay carousel-item active">
+              <img
+                sizes="(max-width: 2560px) 100vw, 2560px"
+                src="./images/solar_123.jpg"
+                alt="First slide"
+              />
+              <div class="carousel-caption">
+                <h1
+                  class="display-2 animated fadeInDown h1 hero-title"
+                  style="color: white"
+                >
+                FasTech Engineering Services
+                </h1>
+                <h4
+                  class="animated fadeInDown hero-text"
+                  style="font-weight: 100"
+                >
+                Advancing Technology, Powering Progress
+                </h4>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100089567720930"
+                      class="social-link"
+                      style="--color: #5955e9"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-facebook"></ion-icon>
+                      <span class="span">Facebook</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/fastech_engineering/"
+                      class="social-link"
+                      style="--color: #ff0000"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <span class="span">Instagram</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/fastech-engineering-services/"
+                      class="social-link"
+                      style="--color: #1ca0f2"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                      <span class="span">linkedin</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dark-overlay carousel-item">
+              <img
+                sizes="(max-width: 2560px) 100vw, 2560px"
+                src="/images/camera_background.jpg"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <h1
+                  class="display-2 animated fadeInDown h1 hero-title"
+                  style="color: white"
+                >
+                  Security Solutions
+                </h1>
+                <h4
+                  class="animated fadeInDown hero-text"
+                  style="font-weight: 100"
+                >
+                  Eyes Everywhere, Security Everywhere.
+                </h4>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100089567720930"
+                      class="social-link"
+                      style="--color: #5955e9"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-facebook"></ion-icon>
+                      <span class="span">Facebook</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/fastech_engineering/"
+                      class="social-link"
+                      style="--color: #ff0000"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <span class="span">Instagram</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/fastech-engineering-services/"
+                      class="social-link"
+                      style="--color: #1ca0f2"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                      <span class="span">linkedin</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dark-overlay carousel-item">
+              <img
+                sizes="(max-width: 2560px) 100vw, 2560px"
+                src="/images/solar_background.jpg"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <h1
+                  class="display-2 animated fadeInDown h1 hero-title"
+                  style="color: white"
+                >
+                  Solar System
+                </h1>
+                <h4
+                  class="animated fadeInDown hero-text"
+                  style="font-weight: 100"
+                >
+                Harnessing The Power Of The Sun, For A Sustainable Future.
+                </h4>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100089567720930"
+                      class="social-link"
+                      style="--color: #5955e9"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-facebook"></ion-icon>
+                      <span class="span">Facebook</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/fastech_engineering/"
+                      class="social-link"
+                      style="--color: #ff0000"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <span class="span">Instagram</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/fastech-engineering-services/"
+                      class="social-link"
+                      style="--color: #1ca0f2"
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                      <span class="span">linkedin</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#cover"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#cover"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--? ============ SERVICE ============ ?-->
+
+      <section class="section project" id="service" aria-label="project">
+        <div class="container">
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">
+            Managing your business with our
+            <span class="has-before">best service</span>
+          </h2>
+
+          <ul class="grid-list" id="services"></ul>
+        </div>
+      </section>
+
+      <!--? ============ BANNER ============ ?-->
+
+      <section class="section banner-section">
+        <div class="banner-container"></div>
+      </section>
+
+      <!--? ============ PRODUCTS ============ ?-->
+
+      <section class="product section" id="product" aria-label="service">
+        <div class="container">
+          <p class="section-subtitle has-before text-center">Our Products</p>
+
+          <h2 class="h2 section-title text-center">
+            Providing you trusted quality
+            <span class="has-before">Products</span>
+          </h2>
+
+          <ul class="grid-list" id="product-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!--? ============ FOOTER ============ ?-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <div>
+              <img
+                src="./images/fasteck_footer_logo.png"
+                alt="logo"
+                srcset=""
+              />
+            </div>
+            <div>
+              <p class="footer-text">Advancing Technology, Powering Progress</p>
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089567720930"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/fastech_engineering/"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/fastech-engineering-services/"
+                    class="social-link"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+
+            <li>
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#service" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#product" class="footer-link">Products</a>
+            </li>
+
+            <li>
+              <a href="aboutus.html" class="footer-link">About us</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <div>
+              <p class="footer-list-title">Contact</p>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-phone" style="color: blue"></div>
+              <p class="footer-link footer-link-col-3">0303-3339962</p>
+            </div>
+            <div class="footer-contact-block">
+              <div class="fa fa-envelope"></div>
+              <p class="footer-link footer-link-col-3">info@fastech.live</p>
+            </div>
+            <div class="footer-contact-block">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p class="footer-link footer-link-col-3">
+                382-K Johar Town, Lahore, Pakistan.
+              </p>
+            </div>
+          </div>
+
+          <div class="feedback">
+            <p class="footer-list-title">Feedback</p>
+            <form class="footer-form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="feedback-form"
+                placeholder="Email Address"
+              />
+              <button type="submit"><ion-icon name="send"></ion-icon></button>
+            </form>
+            <p class="footer-text">
+              Sign up for our latest news & articles. We won’t give you spam
+              mails.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright &copy; 2023 FasTech. All rights reserved.
+          </p>
+        </div>
+        <p class="power-by">
+          Powered By
+          <a
+            style="color: #ffdd61; display: inline; font-weight: 600"
+            href="https://depchip.com/"
+            target="”_blank"
+            >DepChip
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!--? ============ BACK TO TOP ============ ?-->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--? ============ CUSTOM JS ============ ?-->
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/ServicesAndProducts.js" defer></script>
+
+    <!--? ============ IONICON LINK ============ ?-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
